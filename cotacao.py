@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 dia_de_hoje = datetime.now().strftime("%d-%m-%Y")
-workbook = xlsxwriter.Workbook(dia_de_hoje + '_cotação.csv')
+workbook = xlsxwriter.Workbook(dia_de_hoje + '_cotação.xlsx')
 worksheet = workbook.add_worksheet()
 
 
