@@ -24,19 +24,10 @@ web = webdriver.Chrome(chrome_options=chrome_options)
 
 web.get('https://br.frubana.com/spo/')
 
+for i in range(6):
+    web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
+    time.sleep(2)
 
-web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
-time.sleep(2)
-web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
-time.sleep(2)
-web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
-time.sleep(2)
-web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
-time.sleep(2)
-web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
-time.sleep(2)
-web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
-time.sleep(2)
 web.execute_script ( "window.scrollTo (0, document.body.scrollHeight)" )
 time.sleep(5)
 
